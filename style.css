@@ -12,15 +12,25 @@ body::before {
 
   @media (max-width: 578px) {
     .wrapped{
+        border: 1px solid black;
         height: 35rem;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
     }
 
+    .wrapped::-webkit-scrollbar{
+      display: none;
+    }
+
     .boomer{
+        border: 1px solid black;
         height: 30rem;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
+    }
+
+    .boomer::-webkit-scrollbar{
+      display: none;
     }
 
     .get-short{
