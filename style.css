@@ -1,0 +1,21 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+  }
+
+
+  /* section.back-ground{
+    background-color:rgb(249, 236, 218);
+  } */
+
+  
+  @media (min-width: 768px) {
+    .news-input {
+      width: 50%;
+    }
+
+    /* footer .container .contact-us{
+        font-size: small;
+    } */
+  }

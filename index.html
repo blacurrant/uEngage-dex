@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>uEngage Task-1</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+            <img class="w-50" src="../assets/grocery-logo.png" alt="">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="d-sm-flex navbar-nav">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Category</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="#instructors" class="nav-link">Shop Pages</a>
+            </li>
+            <li class="nav-item">
+                <a href="#instructors" class="nav-link">Pages</a>
+            </li>
+              
+          </ul>
+          <ul class=" ms-auto navbar-nav">
+            <li class="nav-item ml-2">
+                <a href="#search-item"><ion-icon class="px-2" name="search-outline"></ion-icon></a>
+            </li>
+            <li class="nav-item pl-2">
+                <a href="login"><ion-icon class="px-2" name="person-outline"></ion-icon></a>
+            </li>
+            <li class="nav-item pl-2">
+                <a href="cart"><ion-icon class="px-2" name="cart-outline"></ion-icon></a>
+            </li>
+          </ul>
+        
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="back-ground text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+      style=" background-color: #EEF8E6;"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1 class="text-success" >Free Home <br> Delivery in 24 Hour</h1>
+            <p class="lead my-4 text-dark">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="input-group news-input border-none ">
+                <input type="text" class="form-control" placeholder="Search entire store here..." />
+                <button class="btn btn-light btn-lg border botder-info border-left-0" type="button"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="../assets/banner-img.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
+        <div class="container">
+            <div class="row row-cols-7">
+                <div class="col mx-1">
+                    <div class="card"> <div class="card-body">
+                        <img class="w-50" src="../assets/fresh-vegetables.png" alt="">
+                        <p>fresh veggi</p>
+                    </div> </div>
+                </div>
+                <div class="col mx-1">
+                    <div class="card">
+                        <img class="w-50 card-img-top" src="../assets/fresh-vegetables.png" alt="">
+                        <div class="card-body">
+                            <p class="card-text">fresh veggi</p>
+                        </div> 
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section> -->
+
+    <section id="instructors" class="p-5">
+        <div class="container position-relative">
+          <div class="position-relative row row-cols-7">
+            <div class="col-sm-4 col-md-4 col-lg-2 mt-2">
+              <div class="card bg-light py-2">
+                <div class="card-body text-center">
+                  <img class="w-50"
+                    src="../assets/fresh-vegetables.png"
+                    class="rounded-circle"
+                    alt=""
+                  />
+                  <p class="card-text m-2">
+                    Fresh Veggies
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-2 mt-2">
+                <div class="card bg-light py-2">
+                  <div class="card-body text-center">
+                    <img class="w-50"
+                      src="../assets/dairy-&-eggs.png"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <p class="card-text m-2">
+                      Dairy/Egg
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-2 mt-2">
+                <div class="card bg-light py-2">
+                  <div class="card-body text-center">
+                    <img class="w-50"
+                      src="../assets/beverages.png"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <p class="card-text m-2">
+                      Beverages
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-2 mt-2">
+                <div class="card bg-light py-2">
+                  <div class="card-body text-center">
+                    <img class="w-50"
+                      src="../assets/fruits.png"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <p class="card-text m-2">
+                      Fruits
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-2 mt-2">
+                <div class="card bg-light py-2">
+                  <div class="card-body text-center">
+                    <img class="w-50"
+                      src="../assets/meat-&-seafood.png"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <p class="card-text m-2">
+                      Meat/Seafood
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-2 mt-2">
+                <div class="card bg-light py-2">
+                  <div class="card-body text-center">
+                    <img class="w-50"
+                      src="../assets/snacks.png"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <p class="card-text m-2">
+                      Snacks
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-4 col-lg-2">
+                <div class="card bg-light py-2">
+                  <div class="card-body text-center">
+                    <img class="w-50"
+                      src="../assets/grocery-&-staples.png"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <p class="card-text m-2 p-0">
+                      Grocery/Staples
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="position-absolute top-50 start-0 translate-middle">
+                <i class="bi bi-arrow-left-circle-fill h2"></i>
+              </div>
+              <div class="position-absolute top-50 start-100 translate-middle">
+                <i class="bi bi-arrow-right-circle-fill h2"></i>
+            </div>
+        </div>
+      </section>
+
+
+
+
+    <!-- Learn Sections -->
+    <!-- <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique deleniti possimus magnam corporis ratione facere!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Learn React</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique deleniti possimus magnam corporis ratione facere!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/react.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="instructors" class="p-5">
+      <div class="container">
+        <p class="lead text-center text-warning m-0">
+          Fresh Fruits on Your Home
+        </p>
+        <h2 class="text-center text-dark m-0">Fresh Online store</h2>
+        <div class="d-flex justify-content-center align-items-center my-4">    
+            <a class="text-decoration-none px-3 text-dark h6" href="">All</a>
+            <a class="text-decoration-none px-3 text-dark h6" href="">Winter</a>
+            <a class="text-decoration-none px-3 text-dark h6" href="">Summer</a>
+            <a class="text-decoration-none px-3 text-dark h6" href="">Dry-fruits</a>
+            <a class="text-decoration-none px-3 text-dark h6" href="">Liquid</a>    
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+                <div class="position-absolute bg-danger text-light rounded top-0 start-0 m-2 px-2">HOT</div>
+                <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-one.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+              <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+              <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-two.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+              <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+              <div class="position-absolute bg-warning text-light rounded top-0 start-0 m-2 px-2">NEW</div>
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-three.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+                <div class="position-absolute bg-info text-light rounded top-0 end-0 m-2 px-2">Save 20% Off</div>
+                <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-four.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+                <div class="position-absolute bg-danger text-light rounded top-0 start-0 m-2 px-2">HOT</div>
+                <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-five.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+              <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+              <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-six.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+              <div class="position-absolute bg-danger text-light rounded top-0 start-0 m-2 px-2">HOT</div>
+              <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-seven.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-3">
+            <div class="position-relative card bg-light py-4">
+              <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+              <div class="position-absolute bg-warning text-light rounded top-0 start-0 m-2 px-2">NEW</div>
+              <div class="card-body text-center">
+                <img class="w-100"
+                  src="../assets/product-image-eight.png"
+                  class="rounded-circle mb-2"
+                  alt=""
+                />
+                <p class="d-block text-decoration-none text-warning card-title m-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </p>
+                <p class="card-text m-0">
+                  Accusman Tree Fusce
+                </p>
+                <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
+        <!-- Boxes -->
+        <section class="p-5" style=" background-color: #F5F4F7;">
+            <div class="container-fluid p-5">
+              <div class="row text-center g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card position-relative text-light border border-light">
+                      <div ><img  class="img-fluid w-100 border border-light" src="../assets/banner-one.jpg" alt=""></div>
+                      <div class="rounded bg-light text-dark bg-opacity-10 position-absolute bottom-0 start-50 translate-middle-x m-0 px-3 py-2">
+                          <h6 class="m-0 text-warning" >10% Off</h6>
+                          <p class="m-0">Good Deals in your City</p>
+                          <p class="m-0 mb-2 text-muted">Save 10% on all fruits</p>
+                      </div>
+                      <div class="card-body position-absolute top-0 end-0 text-center">
+                        <a href="#" class=" btn btn-warning text-light">Explore More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card position-relative text-light border border-light">
+                      <div ><img  class="img-fluid w-100 border border-light" src="../assets/banner-two.jpg" alt=""></div>
+                      <div class="rounded bg-light text-dark bg-opacity-10 position-absolute bottom-0 start-50 translate-middle-x m-0 px-3 py-2">
+                          <h6 class="m-0 text-warning" >15% Off</h6>
+                          <p class="m-0">Good Deals in your City</p>
+                          <p class="m-0 mb-2 text-muted">Save 15% on all fruits</p>
+                      </div>
+                      <div class="card-body position-absolute top-0 end-0 text-center">
+                        <a href="#" class=" btn btn-warning text-light">Explore More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card position-relative text-light border border-light">
+                    <div ><img  class="img-fluid w-100 border border-light" src="../assets/banner-three.jpg" alt=""></div>
+                    <div class="rounded bg-light text-dark bg-opacity-10 position-absolute bottom-0 start-50 translate-middle-x m-0 px-3 py-2">
+                        <h6 class="m-0 text-warning" >12% Off</h6>
+                        <p class="m-0">Good Deals in your City</p>
+                        <p class="m-0 mb-2 text-muted">Save 20% on all fruits</p>
+                    </div>
+                    <div class="card-body position-absolute top-0 end-0 text-center">
+                      <a href="#" class=" btn btn-warning text-light">Explore More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        <!-- <scroll></scroll> -->
+
+
+          <section id="instructors" class="p-5">
+            <div class="container">
+                <div class="d-flex justify-content-between p-2 mt-3">
+                    <h6 class="text-center text-dark m-0">Fresh Online store</h6>
+                    <button class="btn btn-warning text-light"> View More <ion-icon name="arrow-forward-outline"></ion-icon> </button>
+                </div>
+              <div class="row g-4">                
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="position-relative card bg-light py-4">
+                        <div class="position-absolute bg-danger text-light rounded top-0 start-0 m-2 px-2">HOT</div>
+                        <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+                      <div class="card-body text-center">
+                        <img class="w-100"
+                        src="../assets/newly-added-one.png"
+                          class="rounded-circle mb-2"
+                          alt=""
+                        />
+                        <p class="d-block text-decoration-none text-warning card-title m-0">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </p>
+                        <p class="card-text m-0">
+                          Accusman Tree Fusce
+                        </p>
+                        <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                        <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+                      </div>
+                    </div>
+                  </div>
+            
+                      <div class="col-sm-6 col-md-4 col-lg-2">
+                        <div class="position-relative card bg-light py-4">
+                          <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+                          <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+                          <div class="card-body text-center">
+                            <img class="w-100"
+                            src="../assets/newly-added-one.png"
+                              class="rounded-circle mb-2"
+                              alt=""
+                            />
+                            <p class="d-block text-decoration-none text-warning card-title m-0">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </p>
+                            <p class="card-text m-0">
+                              Accusman Tree Fusce
+                            </p>
+                            <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                            <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="col-sm-6 col-md-4 col-lg-2">
+                        <div class="position-relative card bg-light py-4">
+                          <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+                          <div class="position-absolute bg-warning text-light rounded top-0 start-0 m-2 px-2">NEW</div>
+                          <div class="card-body text-center">
+                            <img class="w-100"
+                            src="../assets/newly-added-one.png"
+                              class="rounded-circle mb-2"
+                              alt=""
+                            />
+                            <p class="d-block text-decoration-none text-warning card-title m-0">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </p>
+                            <p class="card-text m-0">
+                              Accusman Tree Fusce
+                            </p>
+                            <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                            <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="col-sm-6 col-md-4 col-lg-2">
+                        <div class="position-relative card bg-light py-4">
+                          <!-- <div class="position-absolute bg-danger text-light rounded mx-2 px-2">HOT</div> -->
+                          <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+                          <div class="card-body text-center">
+                            <img class="w-100"
+                            src="../assets/newly-added-one.png"
+                              class="rounded-circle mb-2"
+                              alt=""
+                            />
+                            <p class="d-block text-decoration-none text-warning card-title m-0">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </p>
+                            <p class="card-text m-0">
+                              Accusman Tree Fusce
+                            </p>
+                            <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                            <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+                          </div>
+                        </div>
+                      </div>
+            
+                    <div class="col-sm-6 col-md-4 col-lg-2">
+                        <div class="position-relative card bg-light py-4">
+                            <div class="position-absolute bg-danger text-light rounded top-0 start-0 m-2 px-2">HOT</div>
+                            <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+                          <div class="card-body text-center">
+                            <img class="w-100"
+                            src="../assets/newly-added-one.png"
+                              class="rounded-circle mb-2"
+                              alt=""
+                            />
+                            <p class="d-block text-decoration-none text-warning card-title m-0">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </p>
+                            <p class="card-text m-0">
+                              Accusman Tree Fusce
+                            </p>
+                            <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                            <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-2">
+                        <div class="position-relative card bg-light py-4">
+                          <div class="position-absolute bg-danger text-light rounded top-0 start-0 m-2 px-2">HOT</div>
+                          <!-- <div class="position-absolute bg-warning mx-2 px-2">NEW</div> -->
+                          <div class="card-body text-center">
+                            <img class="w-100"
+                              src="../assets/newly-added-one.png"
+                              class="rounded-circle mb-2"
+                              alt=""
+                            />
+                            <p class="d-block text-decoration-none text-warning card-title m-0">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </p>
+                            <p class="card-text m-0">
+                              Accusman Tree Fusce
+                            </p>
+                            <p class="text-decoration-none font-weight-bold text-warning m-0">$72.47
+                            <span class="text-decoration-line-through text-dark text-muted font-size-sm">$112.10</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                
+              </div>
+            </div>
+          </section>
+
+    <!-- Newsletter -->
+    <section class="text-light p-5" style=" background-color: #1DA300;">
+        <div class="container">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <div class="align-items-center">
+                <h3 class="mb-3 mb-md-0">Do you have questions ?</h3>
+                <p class="pt-2">We'll help you to grow your career and growth.</p>
+            </div>
+            <div >
+              <button class="font-size-sm btn btn-light btn-lg px-5 text-muted" type="button"> Subscribe here... <ion-icon name="arrow-forward-circle"></ion-icon> </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+<!-- <footer class="p-5">
+    <div class="footer container">
+        <div class="d-flex justify-content-between">
+            <div class="footer-sec">
+                <h3>Pokemon Company</h3>
+                <nav>
+                  <ul>
+                    <li><a href="#">What&#39;s New</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">About our company</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="footer-sec">
+                <h3>For Companies</h3>
+                <nav>
+                  <ul>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Support</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="footer-sec">
+                <h3>Resources</h3>
+                <nav>
+                  <ul>
+                    <li><a href="#">Request a Feature</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="footer-sec">
+                <h3>Resources</h3>
+                <nav>
+                  <ul>
+                    <li><a href="#">Request a Feature</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+
+    <section class="p-5 text-decoration-none" style=" background-color: #252D40 ;">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase text-light fw-bold mb-4">
+              <i class="fas fa-gem" style=" color: white;"></i>Company name
+            </h6>
+            <p>
+                Let's here all about it! Get in touch!
+            </p>
+            <p><ion-icon name="location-outline"></ion-icon> #302 Brick Market,jalsa California <br> United State HQS1130</p>
+            <p><ion-icon name="call-outline"></ion-icon> (41) 123 758 4572</p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-light fw-bold mb-4">
+              Categories
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Organic</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Grocery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Education</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Furniture</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-light fw-bold mb-4">
+              Our Company
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">My company</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Our studio</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Nightlife</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4 text-light">
+              Customer Support
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Conditions</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Privacy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Blog</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">FAQs</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+    <Section class="p-2 bg-dark text-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="col-xs-12 col-md-8">
+                    <p class="lead text-muted"> &copy; Copyright 2020 Odex. Designed by BootstrapDesigns.</p>
+                </div>
+                <div class="icons col-xs-6 col-md-4">
+                    <a href="#"><i class="bi bi-facebook px-2"></i> </a>
+                    <a href="#"><i class="bi bi-instagram px-2"></i></a>
+                    <a href="#"><i class="bi bi-twitter px-2"></i></a>
+                    <a href="#"><i class="bi bi-linkedin px-2"></i></a>
+                </div>
+            </div>
+            </div>
+    </Section>
+
+
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      })
+    </script>
+  </body>
+</html>
