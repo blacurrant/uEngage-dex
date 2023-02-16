@@ -4,18 +4,32 @@ body::before {
     height: 60px;
   }
 
-
-  /* section.back-ground{
-    background-color:rgb(249, 236, 218);
-  } */
-
-  
   @media (min-width: 768px) {
     .news-input {
       width: 50%;
     }
-
-    /* footer .container .contact-us{
-        font-size: small;
-    } */
   }
+
+  @media (max-width: 500px) {
+    .wrapped{
+        height: 35rem;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .boomer{
+        height: 30rem;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .get-short{
+        font-size: 0.5rem;
+    }
+
+    .cen{
+        margin-right: 2.4rem;
+    }
+  }
+
+  
