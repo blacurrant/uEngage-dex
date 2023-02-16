@@ -10,7 +10,7 @@ body::before {
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 578px) {
     .wrapped{
         height: 35rem;
         overflow-y: scroll;
@@ -29,6 +29,13 @@ body::before {
 
     .cen{
         margin-right: 2.4rem;
+    }
+  }
+
+  @media all{
+    .bullsover:hover{
+        color: orange;
+
     }
   }
 
